@@ -1,7 +1,7 @@
 {
   "name": "aem-sling-dev-well",
-  "title": "Get well, AEM/Sling developer guys...",
-  "description": "The AEM Brackets Extension provides a smooth and easy development workflow for front-end developers to edit AEM components. Its main features are: automatic synchronisation of changed project files to your AEM instance; manual importing of content from the AEM instance to the project; Sightly syntax-highlighting and auto-completion; easy editing of associated client libraries (CSS, JavaScript).",
+  "title": "Get well, AEM and Sling developer guys...",
+  "description": "Set of common libraries for a frontend developer's workflow",
   "version": "0.0.1",
   "engines": {
     "node": ">= 0.8.0"
@@ -23,26 +23,28 @@
     "language",
     "external"
   ],
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test/specs/index.js --reporter spec"
+  },
   "dependencies": {
     "adm-zip": "0.4.4",
     "archiver": "0.10.1",
+    "formstream": "^1.0.0",
     "fs-extra": "0.11.0",
     "gaze": "^1.0.0",
     "glob": "3.2.9",
     "q": "1.0.1",
     "request": "~2.34.0",
+    "stream-buffers": "^3.0.0",
+    "through2": "^2.0.1",
     "unzip": "0.1.9",
-    "vinyl-fs": "^2.4.3",
+    "urllib": "^2.9.0",
+    "vinyl": "^1.1.1",
     "xmldom": "0.1.19",
     "xpath": "0.0.7"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-maven-tasks": "~1.1.0",
-    "grunt-npm-install": "~0.1.0",
-    "grunt-contrib-compress": "~0.8.0"
-  },
-  "peerDependencies": {
-    "grunt": ">=0.4.1"
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }

@@ -188,16 +188,16 @@
         );
     }
 
-    // exports.init = init;
+    exports.init = init;
 
-    module.exports = { // TODO ... refactor to be a constructor function? --> new SlyDomain()
+    module.exports.SlyDomain = { // TODO ... refactor to be a constructor function? --> new SlyDomain()
         init: init,
         pullVault: pullVault,
         pushVault: pushVault,
         syncChildProcess: syncChildProcess,
         postFile: postFile,
         setRemote: setRemote,
-        extractRemotePath: _extractRemotePath
+        extractContentPath: _extractRemotePath
     }
 
 }());
