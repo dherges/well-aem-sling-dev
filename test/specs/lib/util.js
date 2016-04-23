@@ -28,7 +28,6 @@ describe('util', function() {
   })
 
 
-
   describe('.extractJcrRootPath()', function () {
     it('should return path relative to "jcr_root"', function () {
       expect(util.extractJcrRootPath('jcr_root/tmp/blubbfile.js')).to.equal('jcr_root')
@@ -55,6 +54,28 @@ describe('util', function() {
 
     it('should return falsy if no "jcr_root" found', function () {
       expect(util.resolveContentPath('fooo', 'bar')).to.be.false
+    })
+  })
+
+
+  describe('.dirName()', function () {
+    it('should return sling directory name for a file', function () {
+      expect(util.dirName('/content/foo/bar.txt')).to.equal('/content/foo')
+    })
+
+    it('should return sling directory name for a file with relative path', function () {
+      expect(util.dirName('content/foo/bar.txt')).to.equal('content/foo')
+    })
+  })
+
+
+  describe('.fileName()', function () {
+    it('should return sling directory name for a file', function () {
+      expect(util.fileName('/content/foo/bar.txt')).to.equal('bar.txt')
+    })
+
+    it('should return sling directory name for a file with relative path', function () {
+      expect(util.fileName('content/foo/bar.txt')).to.equal('bar.txt')
     })
   })
 
