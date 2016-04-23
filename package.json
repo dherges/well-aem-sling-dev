@@ -1,14 +1,14 @@
 {
   "name": "well-aem-sling-dev",
-  "title": "Get well, AEM and Sling developer guys...",
-  "description": "Set of common libraries for a frontend developer's workflow",
+  "title": "Well, a frontend developer's workflow on AEM and Sling ...",
+  "description": "Set of common, re-usable libraries on plain node with a vanilla sky",
   "version": "0.0.1",
   "engines": {
     "node": ">= 0.8.0"
   },
   "author": "David Herges",
-  "homepage": "https://github.com/dherges/aem-sling-dev-well",
-  "repository": "https://github.com/dherges/aem-sling-dev-well",
+  "homepage": "https://github.com/dherges/well-aem-sling-dev",
+  "repository": "https://github.com/dherges/well-aem-sling-dev",
   "license": "Apache-2.0",
   "keywords": [
     "Adobe",
