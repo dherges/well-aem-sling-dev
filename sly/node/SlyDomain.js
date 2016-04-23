@@ -1,4 +1,12 @@
 /*******************************************************************************
+ * Copyright (c) 2016 David Herges. https://github.com/dherges/aem-sling-dev-well
+ *
+ * Licensed under the Apache License 2.0.
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * This file incorporates work covered by the following copyright and
+ * permission notice:
+ *
  * Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
  *
  * Licensed under the Apache License 2.0.
@@ -180,6 +188,16 @@
         );
     }
 
-    exports.init = init;
+    // exports.init = init;
+
+    module.exports = { // TODO ... refactor to be a constructor function? --> new SlyDomain()
+        init: init,
+        pullVault: pullVault,
+        pushVault: pushVault,
+        syncChildProcess: syncChildProcess,
+        postFile: postFile,
+        setRemote: setRemote,
+        extractRemotePath: _extractRemotePath
+    }
 
 }());
