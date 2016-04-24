@@ -19,8 +19,9 @@ or just plain [Node](https://nodejs.org/). It even doesn't spell the words Maven
 
 ## Next Up
 
--> crx content package sync as a node module
--> remove dependencies that are (historic) heritage from the ``sly`` folder
+* crx content package sync as a node module
+* more tests, maybe with a nocked http server .. https://github.com/node-nock/nock#use
+* remove dependencies that are (historic) heritage from the ``sly`` folder
 
 
 ## Documentation
